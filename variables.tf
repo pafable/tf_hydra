@@ -16,26 +16,20 @@ variable "os" {
     description = "OS version"
 }
 
-variable "ssh_key" {
-    type = string
-    default = "jenkins"
-    description = "Jenkins SSH key"
-}
-
 variable "instance_label" {
   type = string
-  default = "spinnaker instance"
-  description = "My test instance"
+  default = "test instance"
+  description = "instance label"
 }
 
 variable "instance_tag" {
     type = string
-    default = "prod"
-    description = "Test tag"
+    default = "test"
+    description = "tag"
 }
 
 variable "instance_hostname" {
   type = string
-  default = "nj-spinnaker-01"
+  default = "vultr-instance"
   description = "instance hostname"
 }
