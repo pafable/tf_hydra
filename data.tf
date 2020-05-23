@@ -29,9 +29,9 @@ data "vultr_os" "my_os" {
 
 data "vultr_ssh_key" "tf_hydra_key" {
   filter {
-    name = "phoenix"
+    name = "name"
     values = [
-      "${var.vultr_ssh_key}"
+      "${var.tf_hydra_ssh_key}"
     ]
   }
 }
