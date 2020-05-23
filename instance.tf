@@ -6,6 +6,9 @@ resource "vultr_server" "tf_vultr_srv" {
   plan_id = "${data.vultr_plan.my_plan.id}"
   region_id = "${data.vultr_region.my_region.id}"
   script_id = "${vultr_startup_script.my_startup.id}"
+  ssh_key_ids = [
+    "${data.vultr_ssh_key.tf_hydra_key.id}"
+  ]
   tag = "${var.instance_tag}"
   notify_activate = true
 }

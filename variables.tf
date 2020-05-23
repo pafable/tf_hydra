@@ -33,3 +33,9 @@ variable "instance_hostname" {
   default = "vultr-instance"
   description = "instance hostname"
 }
+
+variable "tf_hydra_ssh_key" {
+  type = string
+  default = "phoenix"
+  description = "SSH key for hydra"
+}

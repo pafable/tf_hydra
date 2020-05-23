@@ -26,3 +26,12 @@ data "vultr_os" "my_os" {
     ]
   }
 }
+
+data "vultr_ssh_key" "tf_hydra_key" {
+  filter {
+    name = "phoenix"
+    values = [
+      "${var.vultr_ssh_key}"
+    ]
+  }
+}
