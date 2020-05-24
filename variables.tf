@@ -18,7 +18,7 @@ variable "os" {
 
 variable "instance_label" {
   type = string
-  default = "test instance"
+  default = "test_instance_name"
   description = "instance label"
 }
 
